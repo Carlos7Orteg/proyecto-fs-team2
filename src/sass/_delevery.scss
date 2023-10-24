@@ -1,0 +1,319 @@
+.container {
+    background-color: #AE1332;
+    width: 375px;
+    margin: auto;
+    padding: 0%;
+    height: 800px; //este es para quitar
+
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.delivery {
+
+    width: 335px;
+
+    &__title {
+
+        width: 335px;
+        margin: -2px 20px;
+        color: #FFF;
+        padding-top: 80px;
+        text-align: center;
+        text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 100% */
+        letter-spacing: -1.12px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        width: 335px;
+        margin: 20px 20px;
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 128.571% */
+        letter-spacing: -0.56px;
+    }
+
+}
+
+.delivery {
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+
+
+
+    }
+
+    &__item {
+        width: 335px;
+        height: 112px;
+        border-radius: 20px;
+        background: #FFF;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px 10px;
+        // flex-basis: calc((100% - 20px)/3);
+
+
+    }
+
+    &__item-buttom {
+        display: flex;
+        width: 136px;
+        height: 48px;
+        padding: 15px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 200px;
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        letter-spacing: -0.72px;
+
+
+    }
+
+    .purple {
+        background: #AE1332;
+    }
+
+    .green {
+        background: #A1C864;
+    }
+
+    .yellow {
+        background: #F5CE13;
+    }
+
+    &__item-paragraph {
+
+        width: 145px;
+        color: #000;
+        text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 128.571% */
+        letter-spacing: -0.56px;
+    }
+}
+
+// responsive-----------------------------------------------------------------
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: #AE1332;
+        width: 768px;
+        margin: auto;
+        padding: 0%;
+        height: 1000px; //este es para quitar
+
+    }
+
+    .delivery {
+
+
+
+        &__title {
+
+            width: 624px;
+            margin: -2px 90px;
+
+
+            padding-top: 220px;
+
+            font-weight: 500;
+            /* 100% */
+            font-size: 40px;
+            line-height: 44px;
+            /* 110% */
+            letter-spacing: -1.6px;
+
+        }
+
+        &__description {
+            width: 509px;
+            margin: 20px 147px;
+
+
+        }
+
+    }
+
+    .delivery {
+
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            margin: 0px 190px;
+
+
+
+        }
+
+        &__item {
+            width: 389px;
+            height: 128px;
+            padding: 20px 40px;
+
+
+            // flex-basis: calc((100% - 20px)/3);
+
+
+        }
+
+        &__item-buttom {
+            display: flex;
+            width: 136px;
+            height: 48px;
+            padding: 15px 24px;
+
+        }
+
+
+
+        &__item-paragraph {
+
+            display: flex;
+            width: 199px;
+            height: 48px;
+
+            justify-content: center;
+
+        }
+    }
+
+    //  de 768 para arriba aplica esto, hasta el siguiente pumto de interrupcion
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        background-color: #AE1332;
+
+        width: 1280px;
+        margin: auto;
+        padding: 0%;
+        height: 1100px; //este es para quitar
+
+    }
+
+    .delivery {
+
+
+
+        &__title {
+
+            width: 645px;
+            margin: -2px 328px;
+
+            padding-top: 330px;
+
+            font-weight: 500;
+            /* 100% */
+            font-size: 40px;
+            line-height: 44px;
+            /* 110% */
+            letter-spacing: -1.6px;
+
+        }
+
+        &__description {
+            width: 440px;
+            margin: 20px 420px;
+
+
+        }
+
+    }
+
+    .delivery {
+
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            padding: 0px;
+            width: 1200px;
+            margin-left: 25px;
+
+
+
+
+
+
+        }
+
+        &__item {
+            width: 389px;
+            height: 128px;
+
+            // padding: 20px 40px;
+            display: flex;
+
+            flex-basis: calc((100% - 30px)/3);
+
+
+        }
+
+        &__item-buttom {
+            display: flex;
+            width: 136px;
+            height: 48px;
+            padding: 15px 24px;
+
+        }
+
+
+
+        &__item-paragraph {
+
+            display: flex;
+            width: 199px;
+            height: 48px;
+
+            justify-content: center;
+
+        }
+    }
+
+    //  de 768 para arriba aplica esto, hasta el siguiente pumto de interrupcion
+
+}

@@ -1,0 +1,65 @@
+<header class="header__section">
+  <div class="container__header">
+    <div class="header__bottom">
+      <ul class="header__menu">
+        <li><a href="#main" class="link">How It Works</a></li>
+        <li><a href="#fruits" class="link">Fruits</a></li>
+        <li><a href="#contact-link" class="link">Contacts</a></li>
+        <li>
+          <a href="#order" class="link logo">
+            <svg
+              id="icon-cart"
+              class="header__link-icon"
+              width="28"
+              height="28"
+            >
+              <use href="/src/images/icons/header.svg#icon-cart"></use></svg
+          ></a>
+        </li>
+      </ul>
+      <div class="header__responsive">
+        <ul class="header__logo">
+          <li>
+            <a href="#main" class="link">
+              <svg id="icon-logo" class="link" width="16" height="16">
+                <use href="/src/images/icons/header.svg#icon-logo"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#main" class="link-fresh">fresh harvest box</a>
+          </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="24">
+            <use href="/src/images/icons/menu.svg#icon-mobil"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="menu-container">
+  <button class="menu-toggle js-close-menu" id="menu-close-button">
+    <svg width="24" height="24">
+      <use href="/src/images/icons/menu.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li><a href="#main" class="link">How It Works</a></li>
+    <li><a href="#fruits" class="link">Fruits</a></li>
+    <li><a href="#contact" class="link">Contacts</a></li>
+    <li>
+      <a href="#order" class="link">
+        <svg id="icon-uil" class="link-icon" width="28" height="28">
+          <use href="/src/images/icons/menu.svg#icon-uil"></use></svg
+      ></a>
+    </li>
+  </ul>
+</div>
+<script type="module" src="/src/js/links.js"></script>
